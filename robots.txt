@@ -1,0 +1,16 @@
+# Crawling is intentionally ALLOWED here.
+#
+# This site is meant to be reachable by anyone with the link but absent from
+# search results. That is handled by the tag in every page's <head>:
+#
+#   <meta name="robots" content="noindex, nofollow">
+#
+# A crawler has to fetch the page to read that tag. Blocking it here with
+# "Disallow: /" would stop the crawler before it ever sees the tag, and Google
+# could still list the bare URL if it found a link to it somewhere else.
+#
+# So: leave this as-is. Blocking here would make the site MORE likely to
+# appear in search, not less.
+
+User-agent: *
+Allow: /
