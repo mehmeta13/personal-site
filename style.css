@@ -463,3 +463,10 @@ a.name:focus-visible {
     padding-top: 7.5rem;
   }
 }
+
+/* Phones: no back arrows — the browser's own back gesture covers it. */
+@media (max-width: 700px) {
+  .landing-id .back {
+    display: none;
+  }
+}
