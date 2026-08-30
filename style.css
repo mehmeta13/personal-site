@@ -405,6 +405,23 @@ a.name:focus-visible {
   text-transform: uppercase;
 }
 
+.essay .disclaimer {
+  margin: 1.5rem 0 2.5rem;
+  font-size: 0.85rem;
+  font-style: italic;
+  color: var(--ink-muted);
+}
+
+.essay .disclaimer a {
+  color: var(--accent);
+  text-decoration: none;
+}
+
+.essay .disclaimer a:hover,
+.essay .disclaimer a:focus-visible {
+  text-decoration: underline;
+}
+
 /* Sizing is tuned against characters per line, not against taste: 16px in a
    41rem column ran 78 characters, past the comfortable ceiling. 18px brings it
    to 69 without touching the column width. The bottom margin is deliberately
